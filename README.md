@@ -1,4 +1,5 @@
-# tpo_glass_cutting
+# Minimizing the cycle lengh of a glass cutting machine
+
 This dataset was used in a research paper on tool path optimization of a glass cutting machine (under review).
 
 Throughout this dataset, 'unif' and 'rand' are related to instances with uniformly and randomly spaced lines, respectively; 'v' is the number of vertical lines, 'h' is the number of horizontal lines, and 'r' is the replication number (1, 2, 3, 4 or 5).
