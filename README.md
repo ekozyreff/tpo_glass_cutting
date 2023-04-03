@@ -9,4 +9,4 @@ This folder contains information about the instances tested. The first line of e
 
 The file 'tpo.py' has the Python/Gurobi code with both MIP formulations.
 
-More details are available at http://dx.doi.org/10.17632/cwdjvnp8kk.3
+More details are available at http://dx.doi.org/10.17632/cwdjvnp8kk.1
