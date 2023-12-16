@@ -1,12 +1,11 @@
 # Minimizing the cycle lengh of a glass cutting machine
 
-This dataset was used in a research paper on tool path optimization of a glass cutting machine (under review).
+This repo contains the instances used on a research paper on the Cutting Path Optimization Problem, as well as the code used to generate these instances. The paper is currently under revision. Here is the abstract:
 
-Throughout this dataset, 'unif' and 'rand' are related to instances with uniformly and randomly spaced lines, respectively; 'v' is the number of vertical lines, 'h' is the number of horizontal lines, and 'r' is the replication number (1, 2, 3, 4 or 5).
+"We study the problem of determining a minimum length cycle for a glass cutting machine used to create vertical and horizontal scores on rectangular glass plates. We show that the problem can be modeled as a Traveling Salesman Problem (TSP) and as a Rural Postman Problem (RPP) using the same graph. Some specific features of the problem make the formulation using the RPP approach equivalent to the TSP formulation if a certain type of subtour elimination constraint is used. Computational results performed in a large set of instances indicate that the time necessary to solve an instance is related to the size of the graph and to whether the number of vertical and horizontal lines in the cutting pattern is odd or even."
 
-The name of every file in the folder 'instances' has the pattern 'tpo_xxxx_v_h_r', where 'xxxx' is 'unif' or 'rand'. The acronym 'tpo' stands for 'tool path optimization'.
-This folder contains information about the instances tested. The first line of each file has the dimensions of the glass plate. The second line has the horizontal coordinates of the vertical lines. And the thrid line has the vertical coordinates of the horizontal lines.
+The code generates graphs based on vertical and horizontal scores that a glass cutting machine must create on rectangular plates in one of the manufacturing processes of automotive glass. The tool head of the cutting machine starts and finished its cycle at a certain position and travels from one point to another in straight lines. For example the following figure shows an optimal path starting and ending at node zero (0 → 1 → 2 → 13 → 14 → 6 → 5 → 3 → 4 → 12 → 11 → 9 → 10 → 8 → 7 → 0). In this example, the scores that were performed by the cutting tool are the vertical lines 1—2, 3—4, 5—6 and the horizontal lines 7—8, 9—10, 11—12, 13—14.
 
-The file 'tpo.py' has the Python/Gurobi code with both MIP formulations.
+![cutting path example](example.png)
 
-More details are available at http://dx.doi.org/10.17632/cwdjvnp8kk.1
+More details about the instances are available at [http://dx.doi.org/10.17632/8jyf6s695p.1](http://dx.doi.org/10.17632/8jyf6s695p.1) (in Portuguese).
